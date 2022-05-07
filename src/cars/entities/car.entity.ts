@@ -18,7 +18,10 @@ export class Car {
   year: number;
 
   @Prop()
-  image: string;
+  gameImage: string;
+
+  @Prop()
+  realImage: string;
 }
 
 export const CarSchema = SchemaFactory.createForClass(Car);

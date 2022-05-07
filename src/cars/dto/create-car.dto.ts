@@ -3,5 +3,6 @@ export class CreateCarDto {
   model: string;
   brand: string;
   year: number;
-  image: string;
+  gameImage: string;
+  realImage: string;
 }
