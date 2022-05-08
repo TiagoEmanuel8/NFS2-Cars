@@ -18,8 +18,8 @@ export class CarsService {
     return this.carModel.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} car`;
+  findOne(id: string) {
+    return this.carModel.findById(id);
   }
 
   update(id: number, updateCarDto: UpdateCarDto) {
