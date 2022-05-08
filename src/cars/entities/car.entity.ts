@@ -12,6 +12,15 @@ export class Car {
   model: string;
 
   @Prop()
+  origin: string;
+
+  @Prop()
+  topSpeed: number;
+
+  @Prop()
+  time0To100: number;
+
+  @Prop()
   brand: string;
 
   @Prop()

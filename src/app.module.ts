@@ -1,21 +1,15 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ConfigModule } from '@nestjs/config/dist/config.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CarsModule } from './cars/cars.module';
-import dotenv from 'dotenv';
-
-dotenv.config();
-
-const user: string = process.env.USER;
-const password: string = process.env.PASSWORD;
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     CarsModule,
-    MongooseModule.forRoot(
-      `mongodb+srv://${user}:${password}@cluster0.p2fyb.mongodb.net/test`,
-    ),
+    MongooseModule.forRoot(process.env.MONGO_URL),
   ],
   controllers: [AppController],
   providers: [AppService],
