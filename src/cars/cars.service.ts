@@ -22,8 +22,12 @@ export class CarsService {
     return this.carModel.findById(id);
   }
 
-  update(id: number, updateCarDto: UpdateCarDto) {
-    return `This action updates a #${id} car`;
+  update(id: string, updateCarDto: UpdateCarDto) {
+    return this.carModel.findByIdAndUpdate(
+      { _id: id },
+      { $set: updateCarDto },
+      { new: true },
+    );
   }
 
   remove(id: number) {
