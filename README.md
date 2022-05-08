@@ -68,6 +68,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
+## Creditos
+
+https://nfs.fandom.com/wiki/Acura_RSX_Type-S
+
+https://criticalhits.com.br/games/need-for-speed-underground-2-como-desbloquear-todos-os-carros/
+
+https://www.cadeogame.com.br/NFSU2/Pagina/2001/Lista-de-Carros
+
 ## License
 
 Nest is [MIT licensed](LICENSE).
